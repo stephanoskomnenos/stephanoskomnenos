@@ -1,0 +1,16 @@
+name: Top-Languages Readme
+
+on:
+    workflow_dispatch:
+    schedule:
+        # Runs at 12am UTC
+        - cron: '20 15 * * *'
+
+jobs:
+    update-readme:
+        name: Update this repo's README
+        runs-on: ubuntu-latest
+        steps:
+        - uses: stephanoskomnenos/top-languages-readme@master
+          with:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
