@@ -3,7 +3,7 @@ name: Top-Languages Readme
 on:
     workflow_dispatch:
     schedule:
-        # Runs at 12am UTC
+        # Runs at 15:20 UTC
         - cron: '20 15 * * *'
 
 jobs:
