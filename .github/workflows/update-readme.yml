@@ -24,3 +24,4 @@ jobs:
           uses: stephanoskomnenos/top-languages-readme@master
           with:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
+            BRANCH_NAME: ${{ env.BRANCH_NAME }}
