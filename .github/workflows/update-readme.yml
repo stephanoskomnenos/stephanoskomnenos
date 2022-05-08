@@ -6,6 +6,9 @@ on:
         # Runs at 15:20 UTC
         - cron: '20 15 * * *'
 
+permissions:
+    contents: write
+
 jobs:
     update-readme:
         name: Update this repo's README
