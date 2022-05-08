@@ -25,3 +25,6 @@ jobs:
           with:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: ${{ env.BRANCH_NAME }}
+            BLOCKS: "⣀⣄⣆⣇⣧⣷⣿"
+            SHOW_TOTAL: true
+            SHOW_TOTAL_SEPARATOR: true
