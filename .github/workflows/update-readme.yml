@@ -15,6 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Extract branch name
+          id: extract_branch
           if: github.event_name != 'pull_request'
           shell: bash
           run: |
@@ -24,7 +25,7 @@ jobs:
           uses: stephanoskomnenos/top-languages-readme@master
           with:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
-            BRANCH_NAME: ${{ env.BRANCH_NAME }}
+            BRANCH_NAME: ${{ steps.extract_branch.outputs.BRANCH_NAME }}
             BLOCKS: "⣀⣄⣆⣇⣧⣷⣿"
             SHOW_TOTAL: true
             SHOW_TOTAL_SEPARATOR: true
