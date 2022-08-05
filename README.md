@@ -16,5 +16,6 @@ Here are some ideas to get you started:
 -->
 
 <div align=center>
-
+<!--START_SECTION:top_language-->
+<!--END_SECTION:top_language-->
 </div>
